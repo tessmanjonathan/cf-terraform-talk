@@ -18,3 +18,19 @@ variable "github_repo" {
   description = "GitHub repository name"
   type        = string
 }
+
+variable "github_branch" {
+  description = "Name of the github branch"
+  type        = string
+}
+
+variable "build_command" {
+  description = "The command to build your app"
+  type = string
+  default = ""
+}
+
+variable "application_directory" {
+  description = "The directory of your static website contents"
+  type = string
+}
